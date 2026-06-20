@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>야구부 선배와의 로맨스</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+    <div id="name-input-overlay">
+        <div class="input-box">
+            <h2>주인공의 이름을 정해주세요</h2>
+            <input type="text" id="user-name-field" placeholder="이름을 입력하세요">
+            <button onclick="startGame()" class="fancy-button">아섭선배와 연애 시뮬레이션 시작하기</button>
+        </div>
+    </div>
+    <button id="menu-btn" onclick="openMenu()" style="z-index: 1000001;">Menu</button>
+    <div id="menu-modal" class="hidden">
+        <div class="menu-content">
+            <h3>게임 메뉴</h3>
+            <div id="player-status-box" style="background: #f9f9f9; padding: 10px; border-radius: 10px; margin-bottom: 15px; border: 1px inset #eee;">
+                <p><strong>👤 이름:</strong> <span id="status-name">-</span></p>
+                <p><strong>📅 진행 날짜:</strong> <span id="status-day">1</span>일차</p>
+                <p><strong>❤️ 선배의 호감:</strong> <span id="status-love">0</span>점</p>
+                <p><strong>🏷️ 우리의 관계:</strong> <br><span id="status-relation" style="color: #ff4d4d; font-weight: bold;">어색한 사이</span></p>
+            </div>
+            <h3>게임 설정</h3>
+            <button onclick="showHelp()">❓ 게임 방법 설명</button>
+            <button onclick="saveGame()">현재 위치 저장하기</button>
+            <button onclick="loadGame()">저장된 곳에서 시작</button>
+            <button onclick="resetGame()">처음부터 시작</button>
+            <button id="close-menu" onclick="closeMenu()">닫기</button>
+        </div>
+    </div>
+    <div id="game-container">
+    <div id="background"></div>
+    
+    <img id="character-img" src="" alt="캐릭터">
+
+    <div id="ui-container">
+        <div id="name-box"></div>
+        <div id="dialogue-box"></div>
+        <div id="choice-container"></div>
+    </div>
+</div>
+    <div id="help-modal" class="hidden">
+        <div class="menu-content" style="border: 3px solid #ff4d4d;">
+            <h3>⚾ 게임 플레이 가이드</h3>
+            <p style="text-align: left; font-size: 0.9rem; line-height: 1.6;">
+                1. <strong>대화 선택:</strong> 하단의 선택지를 눌러 스토리를 진행하세요.<br>
+                2. <strong>호감도:</strong> 답변에 따라 선배와의 관계가 변합니다.<br>
+                3. <strong>날짜:</strong> 특정 선택지는 시간을 흐르게 합니다.<br>
+                4. <strong>메뉴:</strong> 우측 상단 Menu 버튼으로 언제든 저장하세요.
+            </p>
+            <hr>
+            <p style="font-weight: bold;">준비되셨나요?</p>
+            <button onclick="realStartGame()" style="background: #ff4d4d; color: white;">네, 선배 만나러 가기!</button>
+        </div>
+    </div>
+    <div id="status-bar">
+    <span id="main-day">Day 1</span><br>
+    <span id="main-love">선배와의 호감도: 0 ❤️</span>
+    </div>
+    <script src="story.js" defer></script>
+    <script src="script.js" defer></script>
+    <div id="day-transition" class="hidden">
+    <h1 id="day-text">Day 2</h1>
+</div>
+</body>
+</html>
+
