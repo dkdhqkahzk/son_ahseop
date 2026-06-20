@@ -2013,7 +2013,7 @@ const storyData = {
     day8_2:{
       text:"마. 귀신도 그렇게는 안사라진다 어딨었노?",
       name:"{user}",
-      character:"선배1",
+      character:"선배1.png",
       choices:[
         {text:"형!! 나 계속 교실에 있었는데,, 형이 못찾았던거 아니야? ㅋㅋㅋ", next:"day8_3",score:10},
         {text:"와 개놀래라 귀신의집인줄;;", next:"day8_3", score:5}
@@ -2022,7 +2022,7 @@ const storyData = {
     day8_3:{
       text:"뭐 아무튼 밥 무러 가자.",
       name:선배,
-      character:"선배1",
+      character:"선배1.png",
       choices:[
         {text:"형 근데 오늘 메뉴 뭔지 알아?",next:"day8_4_1",score:0},
         {text:"응!! 얼렁 가자!!", next:"day8_4_2"}
@@ -2031,7 +2031,7 @@ const storyData = {
     day8_4_1:{
      text:"아 오늘 클로렐란지 뭔지 급식 진짜 맛대가리 뒤지게없다 했는데, 매점 어떻노",
      name:선배,
-     character:"선배1",
+     character:"선배1.png",
      choices:[
        {text:"매점? 바로갈겨.", next:"day8_4_1_1",score:10},
        {text:"형, 오늘 뭔가 매점 사람 많을것같지않아?", next:"day8_4_1_2",score:-5}
@@ -2040,18 +2040,19 @@ const storyData = {
     day8_4_1_1:{
       text:"매점에 도착한 아섭과 {user}\n밥이 맛없어서 그런지 매점에는 사람이 많았다.",
       name:선배,
-      character:"선배1",
-      background:"매점",
+      character:"선배1.png",
+      background:"매점.png",
        choices:[
         {text:"형.. 사람 개많은데 어떻게 해?",next:"day8_4_1_1_1"},
         {text:"형 그냥 우리 급식 먹자..",next:"day8_4_1_1_1"}
       ]
     },
     day8_4_1_1_1:{
-      text:"마. 니 여기서 기다려라.",
-      name:선배,
-      choices:[
-        {text:"형 도대체 뭐할려고 그러는거지..",next:"day8_4_1_1_2"}
+        text:"마. 니 여기서 기다려라.",
+        character:"선배1.png",
+        name:선배,
+        choices:[
+            {text:"형 도대체 뭐할려고 그러는거지..",next:"day8_4_1_1_2"}
       ]
     },
     day8_4_1_1_2:{
@@ -2065,7 +2066,7 @@ const storyData = {
     day8_4_1_1_3:{
         text:"난 그런 에겐짓은 안한다.",
         name:선배,
-        character:"선배1",
+        character:"선배1,png",
         choices:[
           {text:"존나 카리스마있네.",next:"day8_4_1_1_4",score:10},
         ]
@@ -2080,8 +2081,8 @@ const storyData = {
     day8_4_1_1_5:{
         text:"(의자에 온 아섭과 {user})\n매점 빵 맛은 있나.",
         name:선배,
-        character:"선배1",
-        background:"공터",
+        character:"선배1.png",
+        background:"학교공터.png",
         choices:[
             {text:"이러니까 매점이지~~ 근데 형은 안먹어? 배고플텐데..",next:"day8_4_1_1_6"}
         ]
@@ -2089,7 +2090,7 @@ const storyData = {
     day8_4_1_1_6:{
       text:"뭐라노.. 니 먹는 모습보니까 괜찮다.",
       name:선배,
-      character:"선배1",
+      character:"선배1.png",
       choices:[
         {text:"가오는 ㅋㅋㅋㅋ\n형 그냥 먹어~ 좀따 내일 경기 연습해야할거 아녀~",next:"day8_4_1_1_7"}
       ]
@@ -2097,7 +2098,7 @@ const storyData = {
     day8_4_1_1_7:{
         text:"니가 무라니까 또 먹기 싫어지는데.\n(아섭은 {user}의 표정을 살핀다)\n안먹으면 잡아먹을 기세네 무섭노~",
         name:선배,
-        character:"선배1",
+        character:"선배1.png",
         choices:[
           {text:"진짜 ㅋㅋㅋㅋ 형 오늘 연습은 못보니까 먹는거라도 봐야할거 아냐..",next:"day8_4_1_1_8"}
         ]
@@ -2105,7 +2106,7 @@ const storyData = {
     day8_4_1_1_8:{
         text:"아.. 니 오늘 못오나.. 아쉽네..",
         name:선배,
-        character:"선배1",
+        character:"선배1.png",
         choices:[
           {text:"웅.. 오늘 야자도 해야하고 뭣도 해야하고 해서.. 형이랑 더 있고싶은데.. 아쉽다..",next:"day8_4_1_1_9"}
         ]
@@ -2113,7 +2114,7 @@ const storyData = {
     day8_4_1_1_9:{
         text:"뭐.. 바쁘면 가끔은 못보기도 하는거지..\n이제 점심시간 끝나가는것같으니까 학교끝나고 연락은 해라.",
         name:선배,
-        character:"선배1",
+        character:"선배1.png",
         choices:[
           {text:"응!! 형 좀있다가 연락할게~~",next:"day9start",score:10,nextDay:true}
         ]
@@ -2121,7 +2122,7 @@ const storyData = {
     day8_4_1_2:{
       text:"꼬붕아 에겐행동 하지 말라했지.",
       name:선배,
-      character:"선배1",
+      character:"선배1.png",
       choices:[
         {text:"힝..",next:"day8_4_1_1"},
         {text:"아니 형 오늘급식이 맛대가리가 없으니까 매점에 사람이 뒤지게 많을거아니야, 그러니까 급식을 먹어야 하지 않을까?",next:"day8_4_1_2_1"}
@@ -2130,7 +2131,7 @@ const storyData = {
     day8_4_1_2_1:{
         text:"잔말말고 걍 매점으로 따라와라.",
         name:선배,
-        character:"선배1",
+        character:"선배1.png",
         choices:[
           {text:"어..어??",next:"day8_4_1_1"}
         ]
@@ -2138,8 +2139,8 @@ const storyData = {
     day8_4_2:{
         text:"급식실에 도착한 아섭과 {user}.\n너무 한산한 급식실을 보고 당황한다.",
         name:"나레이션",
-        character:"선배_당황",
-        background:"급식실",
+        character:"선배_당황.png",
+        background:"급식실.png",
         choices:[
           {text:"형 오늘 급식 어떤거 나오는지 알아....?",next:"day8_4_2_1"}
         ]
@@ -2147,7 +2148,7 @@ const storyData = {
     day8_4_2_1:{
         text:"아 오늘 클로렐란지 뭔지 급식 진짜 맛대가리 뒤지게없다 했는데, 매점 어떻노",
         name:선배,
-        character:"선배1",
+        character:"선배1.png",
         choices:[
           {text:"매점?", next:"day8_4_2_2",score:10},
      ]
@@ -2155,7 +2156,7 @@ const storyData = {
     day8_4_2_2:{
         text:"말이 끝나기도 무섭게 아섭은 {user}를 데리고 매점에 간다.",
         name:"나레이션",
-        character:"선배1",
+        character:"선배1.png",
         choices:[
           {text:"(다음)",next:"day8_4_1_1"}
         ]
