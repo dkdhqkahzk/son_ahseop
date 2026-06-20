@@ -921,7 +921,7 @@ const storyData = {
     //3일차:선배와의 급식실데이트
     day3: {
         text: "오늘은 급식실에서 선배랑 안마주치겠지?",
-        background: "images/급식실.jpg",
+        background: "images/급식실.png",
         name: "{user}",
         choices: [{
             text: "(다음)",
@@ -1310,12 +1310,12 @@ const storyData = {
         character: "images/선배_야구복.webp",
         name: "나레이션",
         choices: [{
-                text: "선배 저 패션은 좀..",
+                text: "선배 오늘 패션은 좀..",
                 next: "day5_2",
                 score: 0
             },
             {
-                text: "와 선배 저 패션 너무 멋있어요!!",
+                text: "와 선배 오늘 패션 너무 멋있어요!!",
                 next: "day5_2_1",
                 score: 10
             }
@@ -1360,6 +1360,7 @@ const storyData = {
     day5_4: {
         text: "오늘은 한화와 롯데의 경기. 선발투수는 신인괴물투수라고 불리는 류현진이다. 선배는 한화가 이길거라며 기대를 한다.",
         character: "images/선배_야구복.webp",
+        background: "images/야구장.png",
         name: "나레이션",
         choices: [{
             text: "(다음)",
@@ -1375,7 +1376,7 @@ const storyData = {
             text: "선배, 그래도 오늘은 한화가 꼭 이길거니까 걱정하지 마요 ㅋㅋㅋ",
             next: "day5_6",
             score: 0
-        }, ]
+        }]
     },
     day5_6: {
         text: "한화이글스의 4회초 공격이 시작하자 2점을 내면서 선배는 엄청나게 좋아한다. 하지만 4회말 롯데가 3점을 주면서 상황은 역전이 된다.",
@@ -1464,7 +1465,8 @@ const storyData = {
         character: "images/선배_초조.png",
         name: "나레이션",
         choices: [{
-            text: "선배 우리 막을 수 있을거에요 아자아자!!"
+            text: "선배 우리 막을 수 있을거에요 아자아자!!",
+            next: "day5_12",
         }]
     },
     day5_12: {
@@ -1527,7 +1529,7 @@ const storyData = {
     },
     //6일차:선배와의 전화데이트
     day6start: {
-        text: "갑자기 선배에게서 전화가 막 걸려온다.\n선배와는 어제 야구장에서 헤어지기 전에 전번교환을 했다.",
+        text: "갑자기 선배에게서 전화가 막 걸려온다.\n선배와는 노래방에서 헤어지기 전에 전번교환을 했다.",
         character: "",
         name: "나레이션",
         background: "images/집안",
