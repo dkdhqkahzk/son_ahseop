@@ -2160,11 +2160,36 @@ const storyData = {
         choices:[
           {text:"(다음)",next:"day8_4_1_1"}
         ]
-    },
-    day9start:{
-        
-    },
+    },  
     //9일차:선배야구 모습관람
+      day9start:{
+        text:"오늘은 형이 야구경기를 하는 날이다.\n형은 엄청나게 머찐 사람이니까 오늘 경기 활약해줄거라고 믿는다.",
+        name:"{user}",
+        character:"",
+        background:"images/학교복도.png",
+        choices:[
+          {text:"(다음)", next:"day9_1"}
+        ]   
+    },
+    day9_1:{
+        text:"형은 내가 오늘 야자한다고 경기를 못보러오는줄 알고있지만 나는 오늘 형의 경기를 보러왔다.",
+        name:"{user}",
+        character:"",
+        background:"images/학교야구장.png",
+        choices:[
+          {text:"(다음)", next:"day9_2"}
+        ]
+    },
+    day9_2:{
+        text:"오늘은 형이 1번타자라서 오늘 경기 활약을 기대해본다.",
+        name:"{user}",
+        character:"",
+        background:"images/학교야구장.png",
+        choices:[
+          {text:"(다음)", next:"day9_3"}
+        ]   
+    },
+    
     //10일차:선배야구 연습관람
     //11일차:괴롭힘당하는 유저->no손아섭
     //12일차:선배와의 진실데이트
