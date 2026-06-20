@@ -2041,7 +2041,7 @@ const storyData = {
       text:"매점에 도착한 아섭과 {user}\n밥이 맛없어서 그런지 매점에는 사람이 많았다.",
       name:선배,
       character:"선배1.png",
-      background:"매점.png",
+      background:"images/매점.png",
        choices:[
         {text:"형.. 사람 개많은데 어떻게 해?",next:"day8_4_1_1_1"},
         {text:"형 그냥 우리 급식 먹자..",next:"day8_4_1_1_1"}
@@ -2049,7 +2049,7 @@ const storyData = {
     },
     day8_4_1_1_1:{
         text:"마. 니 여기서 기다려라.",
-        character:"선배1.png",
+        character:"images/선배1.png",
         name:선배,
         choices:[
             {text:"형 도대체 뭐할려고 그러는거지..",next:"day8_4_1_1_2"}
@@ -2082,7 +2082,7 @@ const storyData = {
         text:"(의자에 온 아섭과 {user})\n매점 빵 맛은 있나.",
         name:선배,
         character:"선배1.png",
-        background:"학교공터.png",
+        background:"images/학교공터.png",
         choices:[
             {text:"이러니까 매점이지~~ 근데 형은 안먹어? 배고플텐데..",next:"day8_4_1_1_6"}
         ]
